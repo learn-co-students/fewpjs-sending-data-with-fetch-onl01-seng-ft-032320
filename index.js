@@ -26,14 +26,12 @@ function submitData(userName, userEmail) {
         .catch(function(error) {
             // alert("There was an error!!")
             console.log(error)
-            appendOutput("Unauthorized Access")
+            appendOutput(error.message)
         })
 
 }
 
 function appendOutput(output) {
     let domObject = document.querySelector("body")
-    let newElement = document.createElement("p")
-    newElement.innerText = output
-    domObject.appendChild(newElement)
+    domObject.innerHTML = output
 }
