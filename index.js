@@ -21,12 +21,12 @@ function submitData(userName, userEmail) {
             return response.json()
         })
         .then(function(object) {
-            appendOutput(object)
+            appendOutput(object.id)
         })
         .catch(function(error) {
-            alert("There was an error!!")
+            // alert("There was an error!!")
             console.log(error)
-            appendOutput(error.message)
+            appendOutput("Unauthorized Access")
         })
 
 }
