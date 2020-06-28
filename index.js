@@ -38,14 +38,7 @@ function submitData(name, email) {
 
 
 
-function showId(json) {
-    let li = document.createElement('li')
-    json.forEach(key => {
-        li.innerHTML = key[id]
-        document.body.append(li)
-        return li;
-    })
-}
+
 
 // fetch("http://localhost:3000/dogs", {
 //   method: "POST",
